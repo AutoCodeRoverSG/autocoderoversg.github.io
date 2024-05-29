@@ -148,7 +148,7 @@
     </div>
 
     <div class="bg-black">
-      <div class="container px-vw-5 py-vh-5">
+      <div class="container px-vw-5 py-vh-3">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-5 text-center text-lg-end" data-aos="zoom-in-right">
             <h2 class="display-1">The future of Software Engineering?</h2>
@@ -160,15 +160,15 @@
             <p class="lead text-secondary"><i>Interestingly, our approach resolved 67 GitHub issues in
                 less than 12 minutes each, whereas developers spent more than 2.77
                 days on average.</i></p>
-            <a href="#" class="btn btn-xl btn-light">Read more
-              <svg xmlns="https://arxiv.org/abs/2404.05427" width="16" height="16" fill="currentColor"
+            <a href="https://arxiv.org/abs/2404.05427" class="btn btn-xl btn-light">Read more
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
               </svg>
             </a>
-            <a href="#" class="btn btn-xl btn-light">Contact us
-              <svg xmlns="https://arxiv.org/abs/2404.05427" width="16" height="16" fill="currentColor"
+            <a href="mailto:info@autocoderover.dev" class="btn btn-xl btn-light">Questions?
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
@@ -224,11 +224,18 @@
       <div class="container-fluid px-vw-5">
         <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
           <h2 class="display-3 text-center" data-aos="zoom-in-up">
-            Success Rate of AutoCodeRover and different SE LLM Agents
+            Comparison on SWE-bench Lite (pass@1)
           </h2>
-          <div class="col-12 col-lg-8 px-vw-7">
-            <canvas id="results-chart"></canvas>
+          <div class="col-12 col-lg-7 col-md-6 col-xs-12 px-vw-7">
+            <canvas id="results-lite-chart"></canvas>
           </div>
+          <!-- <h2 class="display-3 text-center" data-aos="zoom-in-up">
+            Comparison on Full SWE-bench
+          </h2>
+          <div class="col-12 col-lg-7 col-md-6 col-xs-12 px-vw-7">
+            <canvas id="results-full-chart"></canvas>
+          </div> -->
+
           <h2 class="display-3 text-center" data-aos="zoom-in-up">
             Our Workflow
           </h2>
@@ -516,8 +523,10 @@
   </main>
 
   <footer class="bg-black border-top border-dark">
-
-    <div class="container text-center small py-vh-2 border-top border-dark"> © AutoCodeRover
+    <div class="container text-center small py-vh-2 border-top border-dark">
+      © AutoCodeRover
+      Contact us at <a class="link-fancy link-fancy-light me-2"
+        href="mailto:info@autocoderover.dev">info@autocoderover.dev</a>
     </div>
   </footer>
 
@@ -528,118 +537,10 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-  <script>
-    const ctx = document.getElementById('results-chart');
-    const opacity = '0.2';
-    const acrColor = `rgba(200, 30, 0, ${opacity})`;
-    const acrPrivateColor = `rgba(200, 10, 0, ${opacity})`;
-    const sweAgentColor = `rgba(128, 159, 64, ${opacity})`;
-    const devinColor = `rgba(75, 192, 192, ${opacity})`;
-    const openDevinColor = `rgba(82, 256, 192, ${opacity})`;
-    const amazonQColor = `rgba(255, 153, 0, ${opacity})`;
-
-    const data = {
-      labels: ['SWE-bench Full', 'SWE-bench Lite'],
-      datasets: [
-        {
-          label: ["Auto Code Rover(private)"],
-          data: [undefined, 25.0],
-          backgroundColor: acrPrivateColor,
-          borderColor: acrPrivateColor.replace(opacity, '1.0'),
-          borderWidth: 1,
-          categoryPercentage: 0.8, // Controls the width of the bars in the group
-          barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-          label: ["Auto Code Rover"],
-          data: [15.95, 22.33],
-          backgroundColor: acrColor,
-          borderColor: acrColor.replace(opacity, '1.0'),
-          borderWidth: 1,
-          categoryPercentage: 0.8, // Controls the width of the bars in the group
-          barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-          label: ["SWE-Agent"],
-          data: [12.29, 17.00],
-          backgroundColor: sweAgentColor,
-          borderColor: sweAgentColor.replace(opacity, '1.0'),
-          borderWidth: 1,
-          categoryPercentage: 0.8, // Controls the width of the bars in the group
-          barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-          label: ["Amazon Q Dev"],
-          data: [13.82, 20.33],
-          backgroundColor: amazonQColor,
-          borderColor: amazonQColor.replace(opacity, '1.0'),
-          borderWidth: 1,
-          categoryPercentage: 0.8, // Controls the width of the bars in the group
-          barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-          label: ["OpenDevin"],
-          data: [undefined, 25.0],
-          backgroundColor: openDevinColor,
-          borderColor: openDevinColor.replace(opacity, '1.0'),
-          borderWidth: 1,
-          categoryPercentage: 0.8, // Controls the width of the bars in the group
-          barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-      ]
-    };
-
-    new Chart(ctx, {
-      type: 'bar',
-      data: data,
-      options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: false,
-            text: 'Success Rate of AutoCodeRover and different SE LLM Agents',
-            font: {                   // font settings
-              size: 24,
-              family: 'Arial',
-              weight: 'bold'
-            },
-            padding: {
-              top: 20,
-              bottom: 30
-            },
-            align: 'center',           // Alignment of the title ('start', 'center', 'end')
-            fullSize: true             // Whether the title should span the full 
-          },
-          legend: {
-            display: true,
-            position: 'right',
-            labels: {
-              boxWidth: 20,
-              padding: 20 
-            }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: 'Success Rate(%)',
-              font: {
-                size: 12,
-                family: 'Helvetica',
-                weight: 'bold'
-              }
-            }
-          }
-        }
-      }
-    });
-  </script>
-
+  <!-- AOS -->
   <script src="js/aos.js"></script>
+  
+  <script src="js/chartData.js"></script>
   <script>
     AOS.init({
       duration: 800, // values from 0 to 3000, with step 50ms
