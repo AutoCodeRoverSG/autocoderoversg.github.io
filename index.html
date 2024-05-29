@@ -226,7 +226,7 @@
           <h2 class="display-3 text-center" data-aos="zoom-in-up">
             Success Rate of AutoCodeRover and different SE LLM Agents
           </h2>
-          <div class="col-12 col-lg-6 px-vw-7">
+          <div class="col-12 col-lg-8 px-vw-7">
             <canvas id="results-chart"></canvas>
           </div>
           <h2 class="display-3 text-center" data-aos="zoom-in-up">
@@ -534,6 +534,7 @@
     const ctx = document.getElementById('results-chart');
     const opacity = '0.2';
     const acrColor = `rgba(200, 30, 0, ${opacity})`;
+    const acrPrivateColor = `rgba(200, 10, 0, ${opacity})`;
     const sweAgentColor = `rgba(128, 159, 64, ${opacity})`;
     const devinColor = `rgba(75, 192, 192, ${opacity})`;
     const openDevinColor = `rgba(82, 256, 192, ${opacity})`;
@@ -542,6 +543,15 @@
     const data = {
       labels: ['SWE-bench Full', 'SWE-bench Lite'],
       datasets: [
+        {
+          label: ["Auto Code Rover(private)"],
+          data: [undefined, 25.0],
+          backgroundColor: acrPrivateColor,
+          borderColor: acrPrivateColor.replace(opacity, '1.0'),
+          borderWidth: 1,
+          categoryPercentage: 0.8, // Controls the width of the bars in the group
+          barPercentage: 0.9 // Controls the width of each bar within its category
+        },
         {
           label: ["Auto Code Rover"],
           data: [15.95, 22.33],
@@ -561,6 +571,15 @@
           barPercentage: 0.9 // Controls the width of each bar within its category
         },
         {
+          label: ["Amazon Q Dev"],
+          data: [13.82, 20.33],
+          backgroundColor: amazonQColor,
+          borderColor: amazonQColor.replace(opacity, '1.0'),
+          borderWidth: 1,
+          categoryPercentage: 0.8, // Controls the width of the bars in the group
+          barPercentage: 0.9 // Controls the width of each bar within its category
+        },
+        {
           label: ["OpenDevin"],
           data: [undefined, 25.0],
           backgroundColor: openDevinColor,
@@ -569,15 +588,6 @@
           categoryPercentage: 0.8, // Controls the width of the bars in the group
           barPercentage: 0.9 // Controls the width of each bar within its category
         },
-        {
-          label: ["Amazon Q Dev"],
-          data: [13.82, 20.33],
-          backgroundColor: amazonQColor,
-          borderColor: amazonQColor.replace(opacity, '1.0'),
-          borderWidth: 1,
-          categoryPercentage: 0.8, // Controls the width of the bars in the group
-          barPercentage: 0.9 // Controls the width of each bar within its category
-        }
       ]
     };
 
