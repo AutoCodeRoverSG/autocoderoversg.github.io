@@ -1,2 +1,2 @@
-# autocoderoversg.github.io
-AutoCodeRover Website
+# AutoCodeRover
+Website Template
