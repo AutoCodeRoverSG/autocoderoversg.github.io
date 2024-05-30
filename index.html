@@ -249,31 +249,8 @@
             Our Workflow
           </h2>
           <div class="col-12 col-md-12 col-lg-12 px-vw-7">
-            <!-- <img src="img/Worfklow-large.png" alt="abstract image" class="img-fluid position-relative rounded-5 shadow"
-              data-aos="fade-up" data-aos-duration="2000">
-               -->
-            <pre class="mermaid">
-                flowchart LR
-                  PS[Problem Statement]==>one
-                  BL[Buggy Location]==>two
-                  style PS fill:#32a852
-                  subgraph one[Context retrieval stage]
-                  collect[Collect context by invoking APIs]-->api[Api Invocations]
-                  api-->res[Results of the invocations]
-                  res-->contextAnalysis[Context analysis]
-                  contextAnalysis-->sufficient{Sufficient?}
-                  sufficient-->|No|api
-                  sufficient-->|Yes|BL
-                  end
-                  subgraph two[Patch generation stage]
-                  write[Code at buggy location... Please write patch.]-->patchGen[Patch generation]
-                  patchFail[Patch cannot be applied to the program. Please try again.]-->patchGen
-                  patchGen-->patchApply{Can be applied?}
-                  patchApply-->|No|patchFail
-                  patchApply-->|Yes|FP[Final patch]
-                  end
-                  
-               </pre>
+            <img src="img/Worfklow-large.png" alt="abstract image" class="img-fluid position-relative rounded-5 shadow"
+              data-aos="fade-up" data-aos-duration="2000">  
           </div>
         </div>
       </div>
