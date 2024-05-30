@@ -17,7 +17,7 @@ const scales = {
             text: 'Success Rate(%)',
             font: {
                 size: 12,
-                family: 'Helvetica',
+                family: 'Inter',
                 weight: 'bold'
             }
         }

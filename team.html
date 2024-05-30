@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="description" content="AutoCodeRover Team">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32-new.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16-new.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo_180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-56x56.png">
   <meta name="author" content="Holger Koenemann">
   <meta name="generator" content="Eleventy v2.0.1">
@@ -75,24 +75,18 @@
   <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
     <div class="container">
       <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
-          viewBox="0 0 16 16">
-          <path
-            d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-          <path
-            d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-        </svg>
+        <img src="img/logo_transparent.png" alt="AutoCodeRover Logo" class="img-fluid" width="64" height="64">
         <span class="ms-md-1 mt-1 fw-bolder me-md-5">AutoCodeRover</span>
       </a>
 
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="pages">
         <li class="nav-item">
           <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
             Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="team.html" aria-label="A sample content page">
+          <a class="nav-link fs-5" href="team.html" aria-label="Our team">
             Team
           </a>
         </li>
@@ -101,6 +95,9 @@
             Publications
           </a>
         </li>
+      </ul>
+
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="icons">
         <li class="nav-item">
           <a class="nav-link fs-5" href="https://github.com/nus-apr/auto-code-rover/" aria-label="Github Repository">
             <i class="fa-brands fa-github"></i>
@@ -116,18 +113,7 @@
             <i class="fa-brands fa-twitter"></i>
           </a>
         </li>
-          
-        </li>
-        <!--<li class="nav-item">-->
-        <!--  <a class="nav-link fs-5" href="system.html" aria-label="A system message page">-->
-        <!--    System-->
-        <!--  </a>-->
-        <!--</li>-->
-
       </ul>
-      <!--      <a href="https://templatedeck.com/klar-html-template.html" aria-label="Download this template" class="btn btn-outline-light">-->
-      <!--        <small>Download Template</small>-->
-      <!--      </a>-->
     </div>
   </nav>
 
@@ -135,17 +121,20 @@
     <div class="container">
       <div class="row d-flex justify-content-center py-vh-5 pb-0">
         <div class="col-12 col-lg-10 col-xl-8">
-          <div class="row">
+          <div class="row py-vh-3">
             <div class="col-12">
               <h1 class="display-1 fw-bold">Our team</h1>
               <p class="lead border-top pt-5 mt-5" data-aos="fade-up">
-                We are part of the Trustworthy Software Systems group from the National Unviersity of Singapore's School of Computing.
-                In our research, we strive to enable 
-                
+                We are part of the Trustworthy Software Systems group from the National Unviersity of Singapore's School
+                of Computing.
+                In our research, we strive to enable
+
                 <span class="fs-4"><b>secure</b> and <b>trustworthy software systems</b>.</span><br>
 
-                In line with this, we focus on software testing and analysis, and in particular have contributed to the areas of Automated Program Repair, 
-                Fuzzing and Symbolic Execution. We believe that this knowledge can be utilised to ensure that Language Model based agents
+                In line with this, we focus on software testing and analysis, and in particular have contributed to the
+                areas of Automated Program Repair,
+                Fuzzing and Symbolic Execution. We believe that this knowledge can be utilised to ensure that Language
+                Model based agents
                 can create code that developers can use with confidence.
               </p>
             </div>
@@ -160,12 +149,13 @@
         <div class="col-12 col-lg-10 col-xl-8">
           <div class="row d-flex align-items-start" data-aos="fade-right">
             <div class="col-12 col-lg-7">
-              <h2 class="h3 mt-5 border-top pt-5"><a class="link-fancy link-fancy-light me-2" href="https://rshariffdeen.com/">Ridwan Shariffdeen</a></h2>
+              <h2 class="h3 mt-5 border-top pt-5"><a class="link-fancy link-fancy-light me-2"
+                  href="https://rshariffdeen.com/">Ridwan Shariffdeen</a></h2>
               <p class="text-secondary">
-                Ridwan Shariffdeen holds a Ph.D from the the National University of Singapore and a BSC (Hons) from
-                University of Moratuwa, Sri Lanka.
+                Ridwan Shariffdeen holds a Ph.D from the the National University of Singapore.
                 He has more than 8 years of experience working on the industry and academia focusing on software and
                 system security.
+                <br>
                 His research focus on software security, automated program repair, software testing and trustworthy
                 software systems.
 
@@ -180,13 +170,14 @@
                 amet
               </p> -->
               <img class="img-fluid rounded-5 mb-n5 shadow" src="img/ridwan.jpg" width="256" height="256"
-              alt="Dr. Ridwan Shariffdeen" loading="lazy" data-aos="zoom-in-up">
+                alt="Dr. Ridwan Shariffdeen" loading="lazy" data-aos="zoom-in-up">
             </div>
           </div>
 
           <div class="row d-flex align-items-start" data-aos="fade-right">
             <div class="col-12 col-lg-7">
-              <h2 class="h3 mt-5 border-top pt-5"><a class="link-fancy link-fancy-light me-2" href="https://yuntongzhang.github.io/">Yuntong Zhang</a></h2>
+              <h2 class="h3 mt-5 border-top pt-5"><a class="link-fancy link-fancy-light me-2"
+                  href="https://yuntongzhang.github.io/">Yuntong Zhang</a></h2>
               <p class="text-secondary">
                 Yuntong Zhang is currently a third-year PhD student at National University of Singapore.
                 He is generally interested in topics related to improving quality and security guarantees of software
@@ -206,7 +197,7 @@
                 amet
               </p> -->
               <img class="img-fluid rounded-5 mb-n5 shadow" src="img/yuntong.jpg" width="256" height="256"
-              alt="Mr. Zhang Yuntong" loading="lazy" data-aos="zoom-in-left">
+                alt="Mr. Zhang Yuntong" loading="lazy" data-aos="zoom-in-left">
             </div>
           </div>
           <div class="row d-flex align-items-start" data-aos="fade-right">
@@ -214,7 +205,7 @@
               <h2 class="h3 mt-5 border-top pt-5">Haifeng Ruan
               </h2>
               <p class="text-secondary">
-                Ruan Haifeng is a third-year PhD student at School of Computing, National University of Singapore. 
+                Ruan Haifeng is a third-year PhD student at School of Computing, National University of Singapore.
                 His research focuses on program testing and repair and trustworthy auto-programming.
               </p>
             </div>
@@ -225,7 +216,7 @@
                 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
               </p> -->
               <img class="img-fluid rounded-5 mb-n5 shadow" src="img/haifeng.jpg" width="256" height="256"
-              alt="Mr. Ruan Haifeng" loading="lazy" data-aos="zoom-in-right">
+                alt="Mr. Ruan Haifeng" loading="lazy" data-aos="zoom-in-right">
             </div>
           </div>
           <div class="row d-flex align-items-start" data-aos="fade-right">
@@ -235,7 +226,7 @@
                 Martin Mirchev is currently a second-year PhD student at National University of Singapore.
                 He is interested in topics related to providing trust and certification guarantees of software
                 systems. His current research focuses on providing such certifications in automated programming, where
-                code is generated by automated tools or machine learning models. 
+                code is generated by automated tools or machine learning models.
               </p>
             </div>
             <div class="col-12 col-lg-4 offset-lg-1 p-5 mt-5">
@@ -245,28 +236,22 @@
                 amet
               </p> -->
               <img class="img-fluid rounded-5 mb-n5 shadow" src="img/martin.jpg" width="256" height="256"
-              alt="Mr. Zhang Yuntong" loading="lazy" data-aos="zoom-in-left">
+                alt="Mr. Zhang Yuntong" loading="lazy" data-aos="zoom-in-left">
             </div>
           </div>
           <div class="row d-flex align-items-start" data-aos="fade-right">
             <div class="col-12 col-lg-7">
-              <h2 class="h3 mt-5 border-top pt-5"><a class="link-fancy link-fancy-light me-2" href="https://abhikrc.com/">Abhik Roychoudhury</a></h2>
+              <h2 class="h3 mt-5 border-top pt-5"><a class="link-fancy link-fancy-light me-2"
+                  href="https://abhikrc.com/">Abhik Roychoudhury</a></h2>
               <p class="text-secondary">
                 Abhik Roychoudhury is a Provost’s Chair Professor of Computer Science at the National University of
-                Singapore,
-                where he has been working since 2001 after receiving his Ph.D. in Computer Science from the State
-                University
-                of New York at Stony Brook in 2000. Abhik’s research focuses on software testing and analysis,
-                software security and trust-worthy software construction. His research was honored with IEEE TCSE
+                Singapore. Abhik’s research focuses on software testing and analysis,
+                software security and trust-worthy software construction.
+                <br>
+                His research was honored with IEEE TCSE
                 New Directions Award in 2022 (jointly with Cristian Cadar) for contributions to symbolic execution,
                 as well as with International Conference on Software Engineering (ICSE) 2023 Most Influential Paper
-                Award
-                for an ICSE 2013 paper suggesting semantic approaches towards program repair. His former doctoral
-                students
-                have been placed all over the world as academics (University College London, Max-Planck Institute, as
-                University of Melbourne and other places). He has chaired the major conferences in software engineering
-                as Program co-chair of ICSE 2024, General Chair of FSE 2022 in Singapore, and Program chair of ISSTA
-                2016.
+                Award for an ICSE 2013 paper suggesting semantic approaches towards program repair.
                 His research group is known for contributions to automatic programming, program repair, fuzzing and
                 symbolic execution.
               </p>
@@ -278,7 +263,7 @@
                 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
               </p> -->
               <img class="img-fluid rounded-5 mb-n5 shadow" src="img/abhik.jpg" width="256" height="256"
-              alt="Professor Abhik Roychoudhury" loading="lazy" data-aos="zoom-in-left">
+                alt="Professor Abhik Roychoudhury" loading="lazy" data-aos="zoom-in-left">
             </div>
           </div>
 

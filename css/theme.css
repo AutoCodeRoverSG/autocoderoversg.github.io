@@ -9298,7 +9298,7 @@ textarea.form-control-lg {
   z-index: 3 !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) {  
   .float-sm-start {
     float: left !important;
   }
