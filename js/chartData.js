@@ -79,17 +79,8 @@ const liteData = {
     labels: ['SWE-bench Lite'],
     datasets: [
         {
-            label: ["Auto Code Rover(private)"],
+            label: ["Auto Code Rover*"],
             data: [25.0],
-            backgroundColor: acrPrivateColor,
-            borderColor: acrPrivateColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["Auto Code Rover"],
-            data: [19.0],
             backgroundColor: acrColor,
             borderColor: acrColor.replace(opacity, '1.0'),
             borderWidth: 1,
