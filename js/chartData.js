@@ -98,7 +98,7 @@ const liteData = {
         },
         {
             label: ["SWE-Agent"],
-            data: [17.00],
+            data: [18.00],
             backgroundColor: sweAgentColor,
             borderColor: sweAgentColor.replace(opacity, '1.0'),
             borderWidth: 1,
