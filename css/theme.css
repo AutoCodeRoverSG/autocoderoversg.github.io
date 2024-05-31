@@ -12737,7 +12737,7 @@ img {
 }
 
 .link-fancy {
-  color: #1717e5;
+  color: #4b4b8d;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -13076,6 +13076,12 @@ img {
   padding-left: 5vw;
   padding-right: 5vw;
 }
+
+.px-vw-1 {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 
 .px-vw-7 {
   padding-left: 7vw;
