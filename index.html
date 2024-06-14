@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G4F3M2FG8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-3G4F3M2FG8');
@@ -110,22 +110,23 @@
         </li>
       </ul>
 
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="icons"> 
-      <li class="nav-item">
-        <a class="nav-link fs-5" href="https://github.com/nus-apr/auto-code-rover/" aria-label="Github Repository">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fs-5" href="https://discord.gg/quYtDYHR" aria-label="Discord Server">
-          <i class="fa-brands fa-discord"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fs-5" href="https://twitter.com/AbhikRoychoudh1/status/1777494000611852515" aria-label="Twitter Posts">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-      </li>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="icons">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="https://github.com/nus-apr/auto-code-rover/" aria-label="Github Repository">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="https://discord.gg/quYtDYHR" aria-label="Discord Server">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="https://twitter.com/AbhikRoychoudh1/status/1777494000611852515"
+            aria-label="Twitter Posts">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -137,7 +138,7 @@
         <div class="row d-flex align-items-center justify-content-center py-vh-3">
           <div class="col-12 col-xl-10">
             <span class="h5 text-secondary fw-lighter">Our Target:</span>
-            <h1 class="display-huge mt-3 mb-3 lh-1">Assured Autonomy <br> in <br> Software Engineering
+            <h1 class="display-huge mt-3 mb-3 lh-1">Autonomous Software Engineering
             </h1>
           </div>
           <div class="col-12 col-xl-8">
@@ -159,9 +160,24 @@
             </a>
           </div>
         </div>
+        <div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
+          <div class="container-fluid">
+            <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
+              <div class="col-lg-5 col-md-6 col-xs-12 text-lg-end">
+                <h3>
+                  State-of-the-art agent systems on community benchmarks.
+                </h3>
+                <span class="h5 text-secondary fw-lighter">Comparison on SWE-bench Lite (pass@1)</span>
+              </div>
+              <div class="col-12 col-lg-7 col-md-6 col-xs-12 px-vw-7 text-lg-end">
+                <canvas id="results-lite-chart"></canvas>
+                <p class="text-secondary" style="font-size: 0.50em;">* Evaluated on a private version</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </main>
 
   <footer class="bg-black border-top border-dark">
@@ -179,6 +195,9 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- AOS -->
   <script src="js/aos.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/chartData.js"></script>
 
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';

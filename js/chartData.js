@@ -1,7 +1,7 @@
 const fullCtx = document.getElementById('results-full-chart');
 const liteCtx = document.getElementById('results-lite-chart');
 
-const opacity = '0.2';
+const opacity = '0.4';
 const acrColor = `rgba(200, 30, 0, ${opacity})`;
 const acrPrivateColor = `rgba(200, 10, 0, ${opacity})`;
 const sweAgentColor = `rgba(128, 159, 64, ${opacity})`;
@@ -10,18 +10,42 @@ const openDevinColor = `rgba(82, 256, 192, ${opacity})`;
 const amazonQColor = `rgba(255, 153, 0, ${opacity})`;
 
 const scales = {
-    y: {
+    x: {
         beginAtZero: true,
         title: {
             display: true,
             text: 'Success Rate(%)',
             font: {
-                size: 12,
+                size: '20vw',
                 family: 'Inter',
                 weight: 'bold'
             }
+        },
+        ticks: {
+            font: {
+                size: '20vw' // You can adjust this value to the desired tick size
+            }
         }
-    }
+    },
+    y: {
+        beginAtZero: true,
+        title: {
+            display: false,
+            text: 'Tool',
+            font: {
+                size: '20vw',
+                family: 'Inter',
+                weight: 'bold'
+            }
+        },
+        ticks: {
+            font: {
+                size: '15vw', // You can adjust this value to the desired tick size
+                family: 'Inter',
+                weight: (c) => { if (c.type == "tick" && c.tick.label.indexOf("Auto Code Rover") !== -1) { return 'bold' }; return undefined; }
+            },
+        }
+    },
 };
 
 const fullData = {
@@ -76,40 +100,12 @@ const fullData = {
 };
 
 const liteData = {
-    labels: ['SWE-bench Lite'],
+    labels: ['Auto Code Rover*', 'OpenDevin', 'Amazon Q Dev', 'SWE-Agent'],
     datasets: [
         {
-            label: ["Auto Code Rover*"],
-            data: [25.0],
-            backgroundColor: acrColor,
-            borderColor: acrColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["SWE-Agent"],
-            data: [18.00],
-            backgroundColor: sweAgentColor,
-            borderColor: sweAgentColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["Amazon Q Dev"],
-            data: [20.33],
-            backgroundColor: amazonQColor,
-            borderColor: amazonQColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["OpenDevin"],
-            data: [25.0],
-            backgroundColor: openDevinColor,
-            borderColor: openDevinColor.replace(opacity, '1.0'),
+            data: [30.0, 25.0, 20.33, 18.00],
+            backgroundColor: [acrColor, openDevinColor, amazonQColor, sweAgentColor],
+            borderColor: [acrColor, openDevinColor, amazonQColor, sweAgentColor].map(x => x.replace(opacity, '1.0')),
             borderWidth: 1,
             categoryPercentage: 0.8, // Controls the width of the bars in the group
             barPercentage: 0.9 // Controls the width of each bar within its category
@@ -141,16 +137,17 @@ new Chart(liteCtx, {
     type: 'bar',
     data: liteData,
     options: {
+        indexAxis: 'y',
         responsive: true,
         plugins: {
             legend: {
-                display: true,
+                display: false,
                 position: 'right',
                 labels: {
-                    boxWidth: 20,
-                    padding: 20
+                    boxWidth: 15,
+                    padding: 10
                 }
-            }
+            },
         },
         scales: scales
     }
