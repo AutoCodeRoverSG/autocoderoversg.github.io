@@ -8,6 +8,7 @@ const sweAgentColor = `rgba(128, 159, 64, ${opacity})`;
 const devinColor = `rgba(75, 192, 192, ${opacity})`;
 const openDevinColor = `rgba(82, 256, 192, ${opacity})`;
 const amazonQColor = `rgba(255, 153, 0, ${opacity})`;
+const colorGrid = 'rgba(138,138,142)';
 
 const scales = {
     x: {
@@ -25,6 +26,9 @@ const scales = {
             font: {
                 size: '20vw' // You can adjust this value to the desired tick size
             }
+        },
+        grid: {
+            color: colorGrid,
         }
     },
     y: {
@@ -44,6 +48,9 @@ const scales = {
                 family: 'Inter',
                 weight: (c) => { if (c.type == "tick" && c.tick.label.indexOf("Auto Code Rover") !== -1) { return 'bold' }; return undefined; }
             },
+        },
+        grid: {
+            color: colorGrid,
         }
     },
 };
@@ -144,8 +151,8 @@ new Chart(liteCtx, {
                 display: false,
                 position: 'right',
                 labels: {
-                    boxWidth: 15,
-                    padding: 10
+                    boxWidth: '20vw',
+                    padding: '10vw'
                 }
             },
         },
