@@ -12945,6 +12945,13 @@ img {
     transform: translateX(calc(max(1140px, 100vw) / 2 - 570px));
   }
 }
+
+@media (max-width: 1150px) {
+  .sm-pt-vh-5 {
+    padding-top: 14vh;
+  }
+}
+
 @media (min-width: 1680px) {
   .scrollx {
     transform: translateX(calc(max(1320px, 100vw) / 2 - 660px));
