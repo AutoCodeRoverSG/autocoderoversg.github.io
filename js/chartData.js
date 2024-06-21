@@ -86,7 +86,7 @@ const scalesCost = {
             display: false,
             text: 'Tool',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
+                size: (c) => { if (window.innerWidth < 500) return '6ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
                 family: 'Inter',
                 weight: 'bold'
             }
