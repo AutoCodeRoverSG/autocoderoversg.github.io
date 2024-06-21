@@ -66,14 +66,14 @@ const scalesCost = {
             display: true,
             text: 'Average Cost($)',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '6ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '6ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; }  // You can adjust this value to the desired tick size
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; }  // You can adjust this value to the desired tick size
             }
         },
         grid: {
@@ -86,14 +86,14 @@ const scalesCost = {
             display: false,
             text: 'Tool',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '6ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '6ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '10vw' }; }, // You can adjust this value to the desired tick size
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '10vw' }; }, // You can adjust this value to the desired tick size
                 family: 'Inter',
                 weight: (c) => { if (c.type == "tick" && c.tick.label.indexOf("Auto Code Rover") !== -1) { return 'bold' }; return undefined; }
             },
