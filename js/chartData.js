@@ -3,12 +3,13 @@ const liteCtx = document.getElementById('results-lite-chart');
 
 const opacity = '0.4';
 const acrColor = `rgba(200, 30, 0, ${opacity})`;
-const acrPrivateColor = `rgba(200, 10, 0, ${opacity})`;
-const sweAgentColor = `rgba(128, 159, 64, ${opacity})`;
+const coderColor = `rgba(128, 159, 64, ${opacity})`;
 const devinColor = `rgba(75, 192, 192, ${opacity})`;
-const openDevinColor = `rgba(82, 256, 192, ${opacity})`;
+const masaiColor = `rgba(32, 192, 128, ${opacity})`;
+const ibmColor = `rgba(0, 45, 156, ${opacity})`;
 const amazonQColor = `rgba(255, 153, 0, ${opacity})`;
-const colorGrid = 'rgba(138,138,142, 0.4)';
+
+const colorGrid = `rgba(138,138,142, ${opacity})`;
 
 const scales = {
     x: {
@@ -17,14 +18,14 @@ const scales = {
             display: true,
             text: 'Success Rate(%)',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else {return '20vw'};   } ,
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '20vw' }; },
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else {return '20vw'};   }  // You can adjust this value to the desired tick size
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '20vw' }; }  // You can adjust this value to the desired tick size
             }
         },
         grid: {
@@ -37,14 +38,14 @@ const scales = {
             display: false,
             text: 'Tool',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else {return '20vw'};   } ,
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '20vw' }; },
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else {return '12vw'};   }  , // You can adjust this value to the desired tick size
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '12vw' }; }, // You can adjust this value to the desired tick size
                 family: 'Inter',
                 weight: (c) => { if (c.type == "tick" && c.tick.label.indexOf("Auto Code Rover") !== -1) { return 'bold' }; return undefined; }
             },
@@ -55,64 +56,13 @@ const scales = {
     },
 };
 
-const fullData = {
-    labels: ['SWE-bench Full'],
-    datasets: [
-        {
-            label: ["Auto Code Rover(private)"],
-            data: [undefined],
-            backgroundColor: acrPrivateColor,
-            borderColor: acrPrivateColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["Auto Code Rover"],
-            data: [15.95],
-            backgroundColor: acrColor,
-            borderColor: acrColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["SWE-Agent"],
-            data: [12.29],
-            backgroundColor: sweAgentColor,
-            borderColor: sweAgentColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["Amazon Q Dev"],
-            data: [13.82],
-            backgroundColor: amazonQColor,
-            borderColor: amazonQColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-        {
-            label: ["OpenDevin"],
-            data: [undefined],
-            backgroundColor: openDevinColor,
-            borderColor: openDevinColor.replace(opacity, '1.0'),
-            borderWidth: 1,
-            categoryPercentage: 0.8, // Controls the width of the bars in the group
-            barPercentage: 0.9 // Controls the width of each bar within its category
-        },
-    ]
-};
-
 const liteData = {
-    labels: ['Auto Code Rover*', 'OpenDevin', 'Amazon Q Dev', 'SWE-Agent'],
+    labels: ['AutoCodeRover*', 'CodeR', 'MASAI', 'IBM Resarch Agent', 'Amazon Q Dev'],
     datasets: [
         {
-            data: [30.0, 25.0, 20.33, 18.00],
-            backgroundColor: [acrColor, openDevinColor, amazonQColor, sweAgentColor],
-            borderColor: [acrColor, openDevinColor, amazonQColor, sweAgentColor].map(x => x.replace(opacity, '1.0')),
+            data: [30.67, 28.33, 28.00, 26.67, 26.33, 25.33, 20.33],
+            backgroundColor: [acrColor, coderColor, masaiColor, ibmColor, amazonQColor],
+            borderColor: [acrColor, coderColor, masaiColor, ibmColor, amazonQColor].map(x => x.replace(opacity, '1.0')),
             borderWidth: 1,
             categoryPercentage: 0.8, // Controls the width of the bars in the group
             barPercentage: 0.9 // Controls the width of each bar within its category
