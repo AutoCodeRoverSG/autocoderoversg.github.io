@@ -61,7 +61,7 @@ const scales = {
     },
 };
 
-const scaleCostFontCheck = (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1200) { return '8ch'; } else { return '10ch' }; };
+const scaleCostFontCheck = (c) => { if (window.innerWidth < 500) return '7ch'; else if (window.innerWidth < 1200) { return '8ch'; } else { return '10ch' }; };
 
 const scalesCost = {
     x: {
