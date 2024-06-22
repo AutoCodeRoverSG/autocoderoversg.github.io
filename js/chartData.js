@@ -14,6 +14,8 @@ const amazonQColor = `rgba(255, 153, 0, ${opacity})`;
 
 const colorGrid = `rgba(138,138,142, ${opacity})`;
 
+const scaleFontCheck = (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1200) { return '8ch'; } else { return '12ch' }; };
+
 const scales = {
     x: {
         beginAtZero: true,
@@ -21,14 +23,14 @@ const scales = {
             display: true,
             text: 'Success Rate(%)',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '20vw' }; },
+                size: scaleFontCheck,
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '20vw' }; }  // You can adjust this value to the desired tick size
+                size: scaleFontCheck
             }
         },
         grid: {
@@ -41,14 +43,14 @@ const scales = {
             display: false,
             text: 'Tool',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '20vw' }; },
+                size: scaleFontCheck,
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '10vw'; } else { return '12vw' }; }, // You can adjust this value to the desired tick size
+                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1200) { return '6ch'; } else { return '12ch' }; }, // You can adjust this value to the desired tick size
                 family: 'Inter',
                 weight: (c) => { if (c.type == "tick" && c.tick.label.indexOf("Auto Code Rover") !== -1) { return 'bold' }; return undefined; }
             },
@@ -59,6 +61,8 @@ const scales = {
     },
 };
 
+const scaleCostFontCheck = (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1200) { return '8ch'; } else { return '10ch' }; };
+
 const scalesCost = {
     x: {
         beginAtZero: true,
@@ -66,14 +70,14 @@ const scalesCost = {
             display: true,
             text: 'Average Cost($)',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
+                size: scaleCostFontCheck,
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; }  // You can adjust this value to the desired tick size
+                size: scaleCostFontCheck
             }
         },
         grid: {
@@ -86,14 +90,14 @@ const scalesCost = {
             display: false,
             text: 'Tool',
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '6ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '15vw' }; },
+                size: scaleCostFontCheck,
                 family: 'Inter',
                 weight: 'bold'
             }
         },
         ticks: {
             font: {
-                size: (c) => { if (window.innerWidth < 500) return '8ch'; else if (window.innerWidth < 1000) { return '8vw'; } else { return '10vw' }; }, // You can adjust this value to the desired tick size
+                size: scaleCostFontCheck, // You can adjust this value to the desired tick size
                 family: 'Inter',
                 weight: (c) => { if (c.type == "tick" && c.tick.label.indexOf("Auto Code Rover") !== -1) { return 'bold' }; return undefined; }
             },
