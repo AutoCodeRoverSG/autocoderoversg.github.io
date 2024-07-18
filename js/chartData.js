@@ -1,6 +1,5 @@
-const fullCtx = document.getElementById('results-full-chart');
-const liteCtx = document.getElementById('results-lite-chart');
-const liteCostCtx = document.getElementById('cost-lite-chart');
+const resultsCtx = document.getElementById('results-chart');
+const costCtx = document.getElementById('cost-chart');
 
 
 const opacity = '0.4';
@@ -61,7 +60,7 @@ const scales = {
     },
 };
 
-const scaleCostFontCheck = (c) => { if (window.innerWidth < 500) return '7ch'; else if (window.innerWidth < 1200) { return '8ch'; } else { return '10ch' }; };
+const scaleCostFontCheck = (c) => { if (window.innerWidth < 500) return '7ch'; else if (window.innerWidth < 1200) { return '8ch'; } else { return '8ch' }; };
 
 const scalesCost = {
     x: {
@@ -122,7 +121,21 @@ const liteData = {
     ]
 };
 
-const liteCost = {
+const fullData = {
+    labels: ['AutoCodeRover*', 'Factory Code Droid', 'AppMap Navie', 'Amazon Q Dev'],
+    datasets: [
+        {
+            data: [18.83, 19.27, 14.60, 13.82],
+            backgroundColor: [acrColor, coderColor, masaiColor, amazonQColor],
+            borderColor: [acrColor, coderColor, masaiColor, amazonQColor].map(x => x.replace(opacity, '1.0')),
+            borderWidth: 1,
+            categoryPercentage: 0.8, // Controls the width of the bars in the group
+            barPercentage: 0.9 // Controls the width of each bar within its category
+        },
+    ]
+};
+
+const cost = {
     labels: ['AutoCodeRover*', 'SWE-agent', 'MASAI', 'CodeR'],
     datasets: [
         {
@@ -156,9 +169,9 @@ const liteCost = {
 //     }
 // });
 
-new Chart(liteCtx, {
+new Chart(resultsCtx, {
     type: 'bar',
-    data: liteData,
+    data: fullData,
     options: {
         indexAxis: 'y',
         responsive: true,
@@ -176,9 +189,9 @@ new Chart(liteCtx, {
     },
 });
 
-new Chart(liteCostCtx, {
+new Chart(costCtx, {
     type: 'bar',
-    data: liteCost,
+    data: cost,
     options: {
         indexAxis: 'y',
         responsive: true,
