@@ -183,11 +183,13 @@
                 <span class="h5 text-secondary fw-lighter">Comparison on SWE-bench (pass@1)</span>
               </div>
               <div class="col-12 col-lg-4 col-xl-4 col-md-12 col-xs-12">
-                <canvas id="results-chart"></canvas>
+                <img class="img-fluid rounded-5 mb-n5 shadow" src="img/bar_chart_res.png"
+                alt="Results on SWE-bench" loading="lazy" data-aos="zoom-in-up">
               </div>
-              <div class="col-12 col-lg-3 col-xl-3 col-md-12 col-xs-12 text-lg-end">
-                <canvas id="cost-chart"></canvas>
-                <p class="text-secondary" style="font-size: 0.50em;">* Evaluated on a private version</p>
+              <div class="col-12 col-lg-4 col-xl-4 col-md-12 col-xs-12 text-lg-end">
+                <img class="img-fluid rounded-5 mb-n5 shadow" src="img/bar_chart_cost.png"
+                alt="Results on SWE-bench" loading="lazy" data-aos="zoom-in-up">
+                <!-- <p class="text-secondary" style="font-size: 0.50em;">* Evaluated on a private version</p> -->
               </div>
             </div>
           </div>
@@ -213,7 +215,7 @@
   <script src="js/aos.js"></script>
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="js/chartData.js"></script>
+  <!-- <script src="js/chartData.js"></script> -->
 
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
