@@ -1,222 +1,336 @@
 <!doctype html>
 <html class="h-100" lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3G4F3M2FG8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G4F3M2FG8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-3G4F3M2FG8");
+    </script>
 
-    gtag('config', 'G-3G4F3M2FG8');
-  </script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="AutoCodeRover: Assured Autonomy in Software Engineering, Product"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo_180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-56x56.png"
+    />
+    <meta name="author" content="AutoCodeRover Team" />
+    <meta name="generator" content="Eleventy v2.0.1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>AutoCodeRover: Product</title>
+    <link rel="stylesheet" href="css/theme.min.css" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="AutoCodeRover: Assured Autonomy in Software Engineering, Product">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/logo_180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-56x56.png">
-  <meta name="author" content="AutoCodeRover Team">
-  <meta name="generator" content="Eleventy v2.0.1">
-  <meta name="HandheldFriendly" content="true">
-  <title>AutoCodeRover: Product</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+    <style>
+      /* inter-300 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-300.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-300.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-  <style>
-    /* inter-300 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-300.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      /* inter-400 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-regular.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-    /* inter-400 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-regular.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-500.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-500.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-500.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-700.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-700.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+  </head>
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-700.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-  </style>
+  <body
+    class="bg-black text-white mt-0"
+    data-bs-spy="scroll"
+    data-bs-target="#navScroll"
+  >
+    <nav
+      id="navScroll"
+      class="navbar navbar-dark bg-black fixed-top px-vw-5"
+      tabindex="0"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand pe-md-4 fs-6 col-12 col-md-auto text-center"
+          href="index.html"
+        >
+          <img
+            src="img/logo_transparent.png"
+            alt="AutoCodeRover Logo"
+            class="img-fluid"
+            width="32"
+            height="32"
+          />
+          <span class="ms-md-1 mt-2 fw-bolder me-md-5">AutoCodeRover</span>
+        </a>
+        <ul
+          style="margin-right: 0% !important"
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal"
+          id="pages"
+        >
+          <li class="nav-item">
+            <a class="nav-link fs-6" href="index.html" aria-label="Homepage">
+              Vision
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-6"
+              href="product.html"
+              aria-label="Our Product"
+            >
+              Product
+            </a>
+          </li>
+        </ul>
+        <ul
+          style="margin-left: 0% !important"
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal"
+          id="pages"
+        >
+          <li class="nav-item">
+            <a class="nav-link fs-6" href="team.html" aria-label="Our team">
+              Team
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-6"
+              href="publications.html"
+              aria-label="Publications"
+            >
+              Publications
+            </a>
+          </li>
+          <li>
+            <a class="nav-link fs-6" href="vacancy.html" aria-label="Vacancies">
+              Careers
+            </a>
+          </li>
+        </ul>
 
+        <ul
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal"
+          id="icons"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="https://github.com/nus-apr/auto-code-rover/"
+              aria-label="Github Repository"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="https://discord.gg/c6DAfNUngZ"
+              aria-label="Discord Server"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="https://twitter.com/autocoderover"
+              aria-label="Twitter Posts"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-</head>
-
-<body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
-  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
-    <div class="container">
-      <a class="navbar-brand pe-md-4 fs-6 col-12 col-md-auto text-center" href="index.html">
-        <img src="img/logo_transparent.png" alt="AutoCodeRover Logo" class="img-fluid" width="32" height="32">
-        <span class="ms-md-1 mt-2 fw-bolder me-md-5">AutoCodeRover</span>
-      </a>
-      <ul style="margin-right: 0%!important;"
-        class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="pages">
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="index.html" aria-label="Homepage">
-            Vision
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="product.html" aria-label="Our Product">
-            Product
-          </a>
-        </li>
-      </ul>
-      <ul style="margin-left: 0%!important;"
-        class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="pages">
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="team.html" aria-label="Our team">
-            Team
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="publications.html" aria-label="Publications">
-            Publications
-          </a>
-        </li>
-        <li>
-          <a class="nav-link fs-6" href="vacancy.html" aria-label="Vacancies">
-            Careers
-          </a>
-        </li>
-      </ul>
-
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="icons">
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="https://github.com/nus-apr/auto-code-rover/" aria-label="Github Repository">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="https://discord.gg/c6DAfNUngZ" aria-label="Discord Server">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="https://twitter.com/autocoderover" aria-label="Twitter Posts">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-    <div class="bg-dark">
-      <div class="container px-vw-5 py-vh-3">
-        <div class="row d-flex align-items-center py-vh-3">
-          <!-- <div class="col-12 row d-flex align-items-center position-relative justify-content-center">
+    <main>
+      <div class="bg-dark">
+        <div class="container px-vw-5 py-vh-3">
+          <div class="row d-flex align-items-center py-vh-3">
+            <!-- <div class="col-12 row d-flex align-items-center position-relative justify-content-center">
             <h2>
               Product
             </h2>
           </div> -->
-          <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-            <span class="h5 text-secondary fw-lighter">What we do</span>
-            <h2 class="display-3">AutoCodeRover is a fully automated approach for resolving software engineering tasks.
-            </h2>
-          </div>
-          <div class="col-12 col-lg-5" data-aos="fade-left">
-            <h3 class="pt-5">Product Design & Strategy</h3>
-            <p class="text-secondary">Automating software engineering tasks has long been a vision
-              among software engineering researchers and practitioners. We plan to bring make this vision a reality.<br>
-              <a href="https://github.com/nus-apr/auto-code-rover/assets/48704330/719c7a56-40b8-4f3d-a90e-0069e37baad3"
-                class="link-fancy link-fancy-light me-2">Check out our demo <i class="fa-solid fa-video"></i></a>
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+            <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
+              <span class="h5 text-secondary fw-lighter">What we do</span>
+              <h2 class="display-3">
+                AutoCodeRover is a fully automated approach for resolving
+                software engineering tasks.
+              </h2>
+            </div>
+            <div class="col-12 col-lg-5" data-aos="fade-left">
+              <h3 class="pt-5">Product Design & Strategy</h3>
+              <p class="text-secondary">
+                Automating software engineering tasks has long been a vision
+                among software engineering researchers and practitioners. We
+                plan to bring make this vision a reality.<br />
+                <a
+                  href="https://github.com/nus-apr/auto-code-rover/assets/48704330/719c7a56-40b8-4f3d-a90e-0069e37baad3"
+                  class="link-fancy link-fancy-light me-2"
+                  >Check out our demo <i class="fa-solid fa-video"></i
+                ></a>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
               </svg> -->
-            </p>
-            <h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
-            <p class="text-secondary">Building a Language Model based agent that utilises the state-of-the-art
-              research in language models and program analysis, we are able to resolve Github issues on average in 3
-              minutes at the cost of a dollar.
-              <br>
-              <a href="https://github.com/nus-apr/auto-code-rover/" class="link-underline-success link-fancy me-2">Open
-                Source
-                Repository <i class="fa-brands fa-github"></i></a>
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              </p>
+              <h3 class="border-top border-secondary pt-5 mt-5">
+                Development & Engineering
+              </h3>
+              <p class="text-secondary">
+                Building a Language Model based agent that utilises the
+                state-of-the-art research in language models and program
+                analysis, we are able to resolve Github issues on average in 3
+                minutes at the cost of a dollar.
+                <br />
+                <a
+                  href="https://github.com/nus-apr/auto-code-rover/"
+                  class="link-underline-success link-fancy me-2"
+                  >Open Source Repository <i class="fa-brands fa-github"></i
+                ></a>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
               </svg> -->
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="bg-black">
-      <div class="container px-vw-5 py-vh-1">
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-5 text-center text-lg-end px-vw-1" data-aos="zoom-in-right">
-            <h2 class="display-1">The future of Software Engineering</h2>
-          </div>
-          <div class="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
-            <h2 class="display-6 mb-6">
-              Exceeding expectations since day 0
-            </h2>
-            <p class="lead text-secondary"><i>Interestingly, our approach resolved all GitHub issues in
-                less than 12 minutes each, whereas developers spent more than 2.77
-                days on average.</i></p>
-            <a href="product.html" class="btn btn-xl btn-light mt-1">Read more
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-            </a>
-            <a href="mailto:info@autocoderover.dev" class="btn btn-xl btn-light mt-1">Questions?
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-            </a>
+      <div class="bg-black">
+        <div class="container px-vw-5 py-vh-1">
+          <div class="row d-flex align-items-center">
+            <div
+              class="col-12 col-lg-5 text-center text-lg-end px-vw-1"
+              data-aos="zoom-in-right"
+            >
+              <h2 class="display-1">The future of Software Engineering</h2>
+            </div>
+            <div
+              class="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5"
+              data-aos="zoom-in-up"
+            >
+              <h2 class="display-6 mb-6">Exceeding expectations since day 0</h2>
+              <p class="lead text-secondary">
+                <i
+                  >Interestingly, our approach resolved all GitHub issues in
+                  less than 12 minutes each, whereas developers spent more than
+                  2.77 days on average.</i
+                >
+              </p>
+              <a href="product.html" class="btn btn-xl btn-light mt-1"
+                >Read more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="mailto:info@autocoderover.dev"
+                class="btn btn-xl btn-light mt-1"
+                >Questions?
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- <div class="w-100 position-relative bg-black text-white py-vh-5 bg-cover d-flex align-items-center">
+      <!-- <div class="w-100 position-relative bg-black text-white py-vh-5 bg-cover d-flex align-items-center">
       <div class="container-fluid px-vw-5">
         <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
           <div class="col-lg-5 col-md-6 col-xs-12 text-lg-end">
@@ -236,7 +350,7 @@
             <canvas id="results-full-chart"></canvas>
           </div> -->
 
-    <!-- <h2 class="display-3 text-center" data-aos="zoom-in-up">
+      <!-- <h2 class="display-3 text-center" data-aos="zoom-in-up">
             Our Workflow
           </h2>
           <div class="col-12 col-md-12 col-lg-12 px-vw-7">
@@ -246,7 +360,7 @@
         </div>
       </div>
     </div> -->
-    <!-- <div class="bg-black py-vh-3">
+      <!-- <div class="bg-black py-vh-3">
       <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
 
         <div class="row gx-5">
@@ -310,8 +424,8 @@
           </div>
         </div>
       </div> -->
-    </div>
-    <!-- <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
+      <!-- </div> -->
+      <!-- <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
       <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
       <div class="position-relative py-vh-5 bg-cover bg-center rounded-5"
         style="background-image: url(img/webp/abstract12.webp)">
@@ -355,7 +469,7 @@
 
       </div>
     </div> -->
-    <!-- <div class="bg-dark py-vh-5">
+      <!-- <div class="bg-dark py-vh-5">
       <div class="container px-vw-5">
         <div class="row d-flex gx-5 align-items-center">
           <div class="col-12 col-lg-6">
@@ -519,56 +633,63 @@
       </div>
 
     </div> -->
+    </main>
 
-  </main>
+    <footer class="bg-black border-top border-dark">
+      <div class="container text-center small py-vh-2 border-top border-dark">
+        © AutoCodeRover Contact us at
+        <a
+          class="link-fancy link-fancy-light me-2"
+          href="mailto:info@autocoderover.dev"
+          >info@autocoderover.dev</a
+        >
+      </div>
+    </footer>
 
-  <footer class="bg-black border-top border-dark">
-    <div class="container text-center small py-vh-2 border-top border-dark">
-      © AutoCodeRover
-      Contact us at <a class="link-fancy link-fancy-light me-2"
-        href="mailto:info@autocoderover.dev">info@autocoderover.dev</a>
-    </div>
-  </footer>
+    <!-- Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/c4e5e1dcd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boot strap minimzed bundle-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
 
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true, theme: "dark" });
+    </script>
 
-  <!-- Font awesome-->
-  <script src="https://kit.fontawesome.com/c4e5e1dcd2.js" crossorigin="anonymous"></script>
-  <!-- Boot strap minimzed bundle-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- AOS -->
-  <script src="js/aos.js"></script>
+    <script src="js/chartData.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
 
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true, theme: "dark" });
-  </script>
+      const add_class_on_scroll = () =>
+        header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () =>
+        header.classList.remove("scrolled", "shadow-sm");
 
-  <script src="js/chartData.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // values from 0 to 3000, with step 50ms
-    });
-  </script>
-  <script>
-    let scrollpos = window.scrollY
-    const header = document.querySelector(".navbar")
-    const header_height = header.offsetHeight
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
 
-    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
 
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
-
-      if (scrollpos >= header_height) { add_class_on_scroll() }
-      else { remove_class_on_scroll() }
-
-      //  console.log(scrollpos)
-    })
-  </script>
-
-</body>
-
+        //  console.log(scrollpos)
+      });
+    </script>
+  </body>
 </html>

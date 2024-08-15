@@ -1,329 +1,453 @@
 <!doctype html>
 <html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="AutoCodeRover: Assured Autonomy in Software Engineering, Publications"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo_180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-56x56.png"
+    />
+    <meta name="author" content="AutoCodeRover Team" />
+    <meta name="generator" content="Eleventy v2.0.1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>AutoCodeRover: Publications</title>
+    <link rel="stylesheet" href="css/theme.min.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="AutoCodeRover: Assured Autonomy in Software Engineering, Publications">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/logo_180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-56x56.png">
-  <meta name="author" content="AutoCodeRover Team">
-  <meta name="generator" content="Eleventy v2.0.1">
-  <meta name="HandheldFriendly" content="true">
-  <title>AutoCodeRover: Publications</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+    <style>
+      /* inter-300 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-300.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-300.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-  <style>
-    /* inter-300 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-300.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      /* inter-400 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-regular.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-    /* inter-400 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-regular.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-500.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-500.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-500.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+          local(""),
+          url("fonts/inter-v12-latin-700.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("fonts/inter-v12-latin-700.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+  </head>
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-700.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-  </style>
+  <body
+    class="bg-black text-white mt-0"
+    data-bs-spy="scroll"
+    data-bs-target="#navScroll"
+  >
+    <nav
+      id="navScroll"
+      class="navbar navbar-dark bg-black fixed-top px-vw-5"
+      tabindex="0"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand pe-md-4 fs-6 col-12 col-md-auto text-center"
+          href="index.html"
+        >
+          <img
+            src="img/logo_transparent.png"
+            alt="AutoCodeRover Logo"
+            class="img-fluid"
+            width="32"
+            height="32"
+          />
+          <span class="ms-md-1 mt-2 fw-bolder me-md-5">AutoCodeRover</span>
+        </a>
+        <ul
+          style="margin-right: 0% !important"
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal"
+          id="pages"
+        >
+          <li class="nav-item">
+            <a class="nav-link fs-6" href="index.html" aria-label="Homepage">
+              Vision
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-6"
+              href="product.html"
+              aria-label="Our Product"
+            >
+              Product
+            </a>
+          </li>
+        </ul>
+        <ul
+          style="margin-left: 0% !important"
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal"
+          id="pages"
+        >
+          <li class="nav-item">
+            <a class="nav-link fs-6" href="team.html" aria-label="Our team">
+              Team
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-6"
+              href="publications.html"
+              aria-label="Publications"
+            >
+              Publications
+            </a>
+          </li>
+          <li>
+            <a class="nav-link fs-6" href="vacancy.html" aria-label="Vacancies">
+              Careers
+            </a>
+          </li>
+        </ul>
 
+        <ul
+          class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal"
+          id="icons"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="https://github.com/nus-apr/auto-code-rover/"
+              aria-label="Github Repository"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="https://discord.gg/c6DAfNUngZ"
+              aria-label="Discord Server"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="https://twitter.com/autocoderover"
+              aria-label="Twitter Posts"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-</head>
-
-<body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
-
-  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
-    <div class="container">
-      <a class="navbar-brand pe-md-4 fs-6 col-12 col-md-auto text-center" href="index.html">
-        <img src="img/logo_transparent.png" alt="AutoCodeRover Logo" class="img-fluid" width="32" height="32">
-        <span class="ms-md-1 mt-2 fw-bolder me-md-5">AutoCodeRover</span>
-      </a>
-      <ul style="margin-right: 0%!important;"
-        class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="pages">
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="index.html" aria-label="Homepage">
-            Vision
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="product.html" aria-label="Our Product">
-            Product
-          </a>
-        </li>
-      </ul>
-      <ul style="margin-left: 0%!important;"
-        class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="pages">
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="team.html" aria-label="Our team">
-            Team
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6" href="publications.html" aria-label="Publications">
-            Publications
-          </a>
-        </li>
-        <li>
-          <a class="nav-link fs-6" href="vacancy.html" aria-label="Vacancies">
-            Careers
-          </a>
-        </li>
-      </ul>
-
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-flush list-group-horizontal" id="icons">
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="https://github.com/nus-apr/auto-code-rover/" aria-label="Github Repository">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="https://discord.gg/c6DAfNUngZ" aria-label="Discord Server">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="https://twitter.com/autocoderover" aria-label="Twitter Posts">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-    <div class="container">
-      <div class="row d-flex align-items-center justify-content-center py-vh-5 pb-0">
-        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
-          <div class="row py-vh-5 pb-0">
-            <div class="col-12">
-              <h2 class="display-2 fw-bold">Our Research in Autonomous Software Engineering</h2>
-              <p class="lead border-top pt-5 mt-5" data-aos="fade-up">
-                Our research primarily focuses on automated software engineering, with a special emphasis on program
-                repair and fuzz testing. We are proud to have our work accepted at prestigious conferences and journals
-                in the field of software engineering. One extensively examined area is the repair of security
-                vulnerabilities, where we strive to advance the state of the art and contribute to safer and more
-                reliable software systems. Additionally, we have made significant contributions to the development of
-                semantic program repair, further enhancing the effectiveness and trustworthyness of automated repair
-                techniques.
-              </p>
+    <main>
+      <div class="container">
+        <div
+          class="row d-flex align-items-center justify-content-center py-vh-5 pb-0"
+        >
+          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="row py-vh-5 pb-0">
+              <div class="col-12">
+                <h2 class="display-2 fw-bold">
+                  Our Research in Autonomous Software Engineering
+                </h2>
+                <p class="lead border-top pt-5 mt-5" data-aos="fade-up">
+                  Our research primarily focuses on automated software
+                  engineering, with a special emphasis on program repair and
+                  fuzz testing. We are proud to have our work accepted at
+                  prestigious conferences and journals in the field of software
+                  engineering. One extensively examined area is the repair of
+                  security vulnerabilities, where we strive to advance the state
+                  of the art and contribute to safer and more reliable software
+                  systems. Additionally, we have made significant contributions
+                  to the development of semantic program repair, further
+                  enhancing the effectiveness and trustworthyness of automated
+                  repair techniques.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2" href="https://arxiv.org/pdf/2408.02232">SpecRover: Code Intent
-                Extraction via LLMs</a>
-            </h4>
-            <p class="text-secondary">
-              This study seeks to demonstrate the continued importance of specification inference in automated program
-              repair, even as program repair technologies enter the LLM era.
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2" href="https://arxiv.org/pdf/2404.05427">AutoCodeRover:
-                Autonomous Program Improvement (ISSTA24)</a>
-            </h4>
-            <p class="text-secondary">
-              We propose an automated approach for solving Github issues to autonomously achieve program improvement,
-              e.g. bug fixing or feature addition.
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2" href="https://arxiv.org/pdf/2205.10583">Automated Repair of
-                Programs from Large Language Models (ICSE23)</a>
-            </h4>
-            <p class="text-secondary">
-              This study revealed that automatically generated code shares common programming mistakes with
-              human-crafted solutions, indicating APR techniques have potential to fix auto-generated code.
-            </p>
-          </div>
-
-          <div class="col-sm-0 col-md-12 col-lg-12"></div>
-
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2" href="https://arxiv.org/pdf/2405.02213">Automatic Programming:
-                LLMs and Beyond</a>
-              </h3>
-              <p class="text-secondary">
-                A forward-looking view, focusing on the programming environment of the near future, where programmers
-                may need to switch to different roles to fully utilize the power of automatic programming.
-              </p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 ">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2"
-                href="https://www.comp.nus.edu.sg/~abhik/pdf/cacm19.pdf">Automated Program Repair (CACM19)</a>
-            </h4>
-            <p class="text-secondary">
-              Automated program repair is an emerging
-              and exciting field of research that allows
-              for automated rectification of software
-              errors and vulnerabilities.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row d-flex align-items-center justify-content-center py-vh-5 pb-0">
-        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+        <div class="container mt-5">
           <div class="row">
-            <div class="col-12">
-              <h2 class="display-2 fw-bold">Seminal papers in Semantic Program Repair</h1>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://arxiv.org/pdf/2408.02232"
+                  >SpecRover: Code Intent Extraction via LLMs</a
+                >
+              </h4>
+              <p class="text-secondary">
+                This study seeks to demonstrate the continued importance of
+                specification inference in automated program repair, even as
+                program repair technologies enter the LLM era.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://arxiv.org/pdf/2404.05427"
+                  >AutoCodeRover: Autonomous Program Improvement (ISSTA24)</a
+                >
+              </h4>
+              <p class="text-secondary">
+                We propose an automated approach for solving Github issues to
+                autonomously achieve program improvement, e.g. bug fixing or
+                feature addition.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://arxiv.org/pdf/2205.10583"
+                  >Automated Repair of Programs from Large Language Models
+                  (ICSE23)</a
+                >
+              </h4>
+              <p class="text-secondary">
+                This study revealed that automatically generated code shares
+                common programming mistakes with human-crafted solutions,
+                indicating APR techniques have potential to fix auto-generated
+                code.
+              </p>
+            </div>
+
+            <div class="col-sm-0 col-md-12 col-lg-12"></div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://arxiv.org/pdf/2405.02213"
+                  >Automatic Programming: LLMs and Beyond</a
+                >
+              </h4>
+              <p class="text-secondary">
+                A forward-looking view, focusing on the programming environment
+                of the near future, where programmers may need to switch to
+                different roles to fully utilize the power of automatic
+                programming.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://www.comp.nus.edu.sg/~abhik/pdf/cacm19.pdf"
+                  >Automated Program Repair (CACM19)</a
+                >
+              </h4>
+              <p class="text-secondary">
+                Automated program repair is an emerging and exciting field of
+                research that allows for automated rectification of software
+                errors and vulnerabilities.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2"
-                href="https://www.comp.nus.edu.sg/~abhik/pdf/ICSE13-SEMFIX.pdf">SemFix: Program Repair via Semantic <br>
-                (ICSE13 Test of Time Award) </a>
-            </h4>
-            <p class="text-secondary">
-              In this paper, an automated repair method based on symbolic execution, constraint solving and program
-              synthesis is presented. This work has been the starting point for semantic program repair.
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2"
-                href="https://www.comp.nus.edu.sg/~abhik/pdf/ICSE16-angelix.pdf">Angelix: Scalable Multiline Program
-                Patch Synthesis via Symbolic Analysis (ICSE16)</a>
-              </h3>
-              <p class="text-secondary">
-                Anglix is a novel semantics-based repair method that scales
-                up to industry-scale programs in C.
-              </p>
+
+        <div
+          class="row d-flex align-items-center justify-content-center py-vh-5 pb-0"
+        >
+          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="display-2 fw-bold">
+                  Seminal papers in Semantic Program Repair
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-
-      <div class="row d-flex align-items-center justify-content-center py-vh-5 pb-0">
-        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+        <div class="container mt-5">
           <div class="row">
-            <div class="col-12">
-              <h2 class="display-2 fw-bold">Automated Repair of Security Vulnerabilities</h1>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://www.comp.nus.edu.sg/~abhik/pdf/ICSE13-SEMFIX.pdf"
+                  >SemFix: Program Repair via Semantic <br />
+                  (ICSE13 Test of Time Award)
+                </a>
+              </h4>
+              <p class="text-secondary">
+                In this paper, an automated repair method based on symbolic
+                execution, constraint solving and program synthesis is
+                presented. This work has been the starting point for semantic
+                program repair.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://www.comp.nus.edu.sg/~abhik/pdf/ICSE16-angelix.pdf"
+                  >Angelix: Scalable Multiline Program Patch Synthesis via
+                  Symbolic Analysis (ICSE16)</a
+                >
+              </h4>
+              <p class="text-secondary">
+                Anglix is a novel semantics-based repair method that scales up
+                to industry-scale programs in C.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row d-flex align-items-center justify-content-center py-vh-5 pb-0"
+        >
+          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="display-2 fw-bold">
+                  Automated Repair of Security Vulnerabilities
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://www.comp.nus.edu.sg/~abhik/pdf/ISSTA22.pdf"
+                  >Vulnerability Repair via Inductive Inference <br />
+                  (ISSTA22)
+                </a>
+              </h4>
+              <p class="text-secondary">
+                In this paper, a counter-example guided inductive inference
+                procedure over program states to define likely invariants at
+                possible fix locations was presented to reduce the time between
+                reporting and fix of a vulnerability.
+              </p>
+              <!-- </p> -->
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h4 class="h4 mt-3 border-top pt-3">
+                <a
+                  class="link-fancy link-fancy-light me-2"
+                  href="https://abhikrc.com/pdf/PLDI21.pdf"
+                  >Concolic Program Repair<br />(PLDI21)</a
+                >
+              </h4>
+              <p class="text-secondary">
+                In this work we propose an integrated approach for detecting and
+                discarding overfitting patches via systematic co-exploration of
+                the patch space and input space.
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <!-- </div> -->
+    </main>
 
-
-
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2"
-                href="https://www.comp.nus.edu.sg/~abhik/pdf/ISSTA22.pdf">Vulnerability Repair via Inductive
-                Inference <br> (ISSTA22) </a>
-            </h4>
-            <p class="text-secondary">
-              In this paper, a counter-example guided inductive inference procedure over program states to define
-              likely invariants at possible fix locations was presented to reduce the time between reporting
-              and fix of a vulnerability.
-            </p>
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <h4 class="h4 mt-3 border-top pt-3">
-              <a class="link-fancy link-fancy-light me-2" href="https://abhikrc.com/pdf/PLDI21.pdf">Concolic Program
-                Repair<br>(PLDI21)</a>
-              </h3>
-              <p class="text-secondary">
-                In this work we propose an integrated approach for detecting and discarding overfitting patches via
-                systematic co-exploration of the patch space and input space.
-              </p>
-          </div>
-        </div>
+    <footer class="bg-black border-top border-dark">
+      <div class="container text-center small py-vh-2 border-top border-dark">
+        © AutoCodeRover Contact us at
+        <a
+          class="link-fancy link-fancy-light me-2"
+          href="mailto:info@autocoderover.dev"
+          >info@autocoderover.dev</a
+        >
       </div>
-    </div>
-    </div>
+    </footer>
 
-  </main>
+    <script
+      src="https://kit.fontawesome.com/c4e5e1dcd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
 
-  <footer class="bg-black border-top border-dark">
-    <div class="container text-center small py-vh-2 border-top border-dark">
-      © AutoCodeRover
-      Contact us at <a class="link-fancy link-fancy-light me-2"
-        href="mailto:info@autocoderover.dev">info@autocoderover.dev</a>
-    </div>
-  </footer>
+      const add_class_on_scroll = () =>
+        header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () =>
+        header.classList.remove("scrolled", "shadow-sm");
 
-  <script src="https://kit.fontawesome.com/c4e5e1dcd2.js" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // values from 0 to 3000, with step 50ms
-    });
-  </script>
-  <script>
-    let scrollpos = window.scrollY
-    const header = document.querySelector(".navbar")
-    const header_height = header.offsetHeight
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
 
-    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
-
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
-
-      if (scrollpos >= header_height) { add_class_on_scroll() }
-      else { remove_class_on_scroll() }
-    })
-  </script>
-
-</body>
-
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+      });
+    </script>
+  </body>
 </html>
