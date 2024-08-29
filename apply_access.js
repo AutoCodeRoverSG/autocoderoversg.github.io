@@ -9,7 +9,7 @@ async function submitForm() {
     if (!errorList) {
       errorList = document.createElement("ul");
       errorList.id = "error-list";
-      errorList.style.color = "red";
+      errorList.style.color = "lightblue";
       form.insertAdjacentElement("beforebegin", errorList);
     } else {
       errorList.innerHTML = "";
@@ -39,7 +39,8 @@ async function submitForm() {
       if (!div) {
         div = document.createElement("div");
         div.id = "result";
-        div.style.color = "green";
+        div.className = "card col-lg-10 bg-gray-800";
+        div.style.color = "white";
         div.style.display = "block";
         form.insertAdjacentElement("beforebegin", div);
       }
