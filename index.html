@@ -60,6 +60,10 @@
         filter: invert(1);
       }
 
+      #access-form {
+        filter: invert(1);
+      }
+
       /* inter-300 - latin */
       @font-face {
         font-family: "Inter";
@@ -316,6 +320,122 @@
                   />
                   <!-- <p class="text-secondary" style="font-size: 0.50em;">* Evaluated on a private version</p> -->
                 </div>
+
+                <h2>Get Access</h2>
+                <form id="access-form" method="post">
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label
+                        for="first-name"
+                        style="color: black"
+                        class="control-label"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        class="form-control"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group col-md-4">
+                      <label
+                        for="last-name"
+                        style="color: black"
+                        class="control-label"
+                        >Last Name</label
+                      >
+                      <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        class="form-control"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col">
+                      <label
+                        for="email"
+                        style="color: black"
+                        class="control-label"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Institutional Email"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <label
+                    for="affiliation"
+                    style="color: black"
+                    class="control-label"
+                    >Affiliation</label
+                  >
+                  <input
+                    type="text"
+                    id="affiliation"
+                    name="affiliation"
+                    required
+                  />
+
+                  <label
+                    for="job-title"
+                    style="color: black"
+                    class="control-label"
+                    >Job Title</label
+                  >
+                  <input
+                    type="string"
+                    id="job-title"
+                    name="job-title"
+                    required
+                  />
+
+                  <label for="detail" style="color: black" class="control-label"
+                    >What would you be using AutoCodeRover for?</label
+                  >
+                  <textarea
+                    id="detail"
+                    name="detail"
+                    rows="4"
+                    cols="50"
+                  ></textarea>
+
+                  <input type="submit" value="Submit" />
+                </form>
+
+                <script src="/apply_access.js"></script>
+
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                      />
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
