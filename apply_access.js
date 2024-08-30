@@ -98,6 +98,13 @@ function validateAndPrepareFormData() {
     formData.append('job-title', jobTitle);
   }
 
+  const page = form['page'].value.trim();
+  if (page.length > 1023) {
+    errors.push('Personal page url must be less than 1024 characters long.');
+  } else {
+    formData.append('page', page);
+  }
+
   const detail = form['detail'].value.trim();
   if (detail.length > 2047) {
     errors.push('Detail must be less than 2048 characters long');
